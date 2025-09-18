@@ -436,7 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 2: Load the dataset into a Pandas dataframe.</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:362}}" data-outputid="e2491b69-8827-4917-b057-17874feaaff4" data-execution_count="4">
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:678}}" data-outputid="e2491b69-8827-4917-b057-17874feaaff4" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then, explore the data by seeing what the first few rows look like.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ds.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -806,6 +806,36 @@ memory usage: 584.6+ KB</code></pre>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># then see which ratings appear most often.</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> ds[(ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'G'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'PG'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'PG-13'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">"R"</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'NC-17'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="28b9642b-12eb-468a-ca58-4779f01824c7" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'rating'</span>].count()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>np.int64(1013)</code></pre>
+</div>
+</div>
+<div id="cell-15" class="cell" data-outputid="eeb98565-b85d-4be8-9335-915f9b317537" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:115}}" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'rating'</span>].mode()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">rating</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+
+</div><br><label><b>dtype:</b> object</label>
+</div>
+</div>
 </section>
 </section>
 <section id="part-4-visualization" class="level2">
@@ -839,14 +869,16 @@ alt.Chart(employees).mark_boxplot().encode(
   title='Salaries by Job Title'
 )</code></pre>
 <p>Like with Pandas, there is a <a href="https://altair-viz.github.io/getting_started/starting.html#the-chart-object">conventional way to import Altair</a> into your projects.</p>
-<div id="cell-18" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the Altair library the conventional way.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the Altair library the conventional way.</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Let’s create a barchart showing the count of each movie rating by using Altair’s aggregation capabilities.</p>
 <p>In <a href="https://altair-viz.github.io/getting_started/starting.html#data-transformation-aggregation">this example</a>, we see the x axis being set to a feature called <code>a</code>, and the y axis set to the <code>average()</code> of a feature called <code>b</code>.</p>
 <p>In our case, we want the x axis to be set to <code>rating</code> and the y axis to be the <code>count()</code> of <code>rating</code>.</p>
-<div id="cell-20" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Altair to create a bar chart comparing the count of each movie rating</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Altair to create a bar chart comparing the count of each movie rating</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>alt.chart(ds).mark_</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="seaborn" class="level3">
@@ -873,14 +905,14 @@ ax.set_ylabel("Annual salary in thousands of $USD")
 ax.set_xlabel("Job title")</code></pre>
 <p>Like with Pandas, there is a <a href="https://seaborn.pydata.org/tutorial/relational.html">conventional way to import Seaborn</a> into your projects.</p>
 <p>Optionally, you may wish to set some default chart aesthetics by <a href="https://seaborn.pydata.org/tutorial/aesthetics.html">setting the chart style</a>.</p>
-<div id="cell-23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the seaborn library the conventional way. Then optionally configure</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the default chart style.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the seaborn library the conventional way. Then optionally configure</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the default chart style.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Since the <code>rating</code> column uses categorical data, we need to use Seaborn’s <a href="https://seaborn.pydata.org/tutorial/categorical.html">categorical visualizations</a>.</p>
 <p>In particular, we want a “count plot” that will display a count of movie ratings.</p>
-<div id="cell-25" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use seaborn to create a count plot comparing the count of each movie rating</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use seaborn to create a count plot comparing the count of each movie rating</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="pandas-built-in-plotting" class="level3">
@@ -900,10 +932,10 @@ ax = employees[ ['job','salary'] ].plot().box()
 ax.set_title("Salaries by Job Title")
 ax.set_ylabel("Annual salary in thousands of $USD")
 ax.set_xlabel("Job title")</code></pre>
-<div id="cell-27" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pandas' built in plotting functions to create a count plot comparing the count of each movie rating</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This will be a little trickier than the other libraries, but one hint is that the pandas value_counts() function</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># actually returns a dataframe.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pandas' built in plotting functions to create a count plot comparing the count of each movie rating</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This will be a little trickier than the other libraries, but one hint is that the pandas value_counts() function</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># actually returns a dataframe.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
