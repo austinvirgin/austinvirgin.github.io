@@ -412,7 +412,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="part-1-import-pandas">Part 1: Import Pandas</h2>
 <p>The <code>pandas library</code> is a python library used for data analysis and manipulation. It will provide the core functionality for most of what you do in the data exploration and preprocessing stages of most machine learning projects.</p>
 <p>Please see <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html">this Getting Started Guide</a> for information on the conventional way to import Pandas into your project, as well as other helpful tips for common Pandas tasks.</p>
-<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="5">
+<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 1: Enter the code below to import Pandas according to the</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># conventional method.</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -432,15 +432,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What kind of data is in each column?</li>
 <li>Do any of the columns have missing values?</li>
 </ul>
-<div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="6">
+<div id="cell-5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="41">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 2: Load the dataset into a Pandas dataframe.</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/netflix_titles.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:678}}" data-outputid="5bcc78ca-2211-4a72-c084-cd40f17ee965" data-execution_count="7">
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:293}}" data-outputid="1eb11b55-baee-4f60-a077-39fa67ee968e" data-execution_count="42">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Then, explore the data by seeing what the first few rows look like.</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ds.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
-<div id="df-1210d2f1-de66-459f-98a5-173e1858d6c0" class="colab-df-container">
+<div class="cell-output cell-output-display" data-execution_count="42">
+<div id="df-c6c8d65c-b3d0-4194-8722-744f1f14de32" class="colab-df-container">
     <div>
 
 
@@ -545,7 +545,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1210d2f1-de66-459f-98a5-173e1858d6c0')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c6c8d65c-b3d0-4194-8722-744f1f14de32')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -595,12 +595,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1210d2f1-de66-459f-98a5-173e1858d6c0 button.colab-df-convert');
+        document.querySelector('#df-c6c8d65c-b3d0-4194-8722-744f1f14de32 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1210d2f1-de66-459f-98a5-173e1858d6c0');
+        const element = document.querySelector('#df-c6c8d65c-b3d0-4194-8722-744f1f14de32');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -620,8 +620,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-7844a7b1-23ba-44b2-b4d9-105df334fb27">
-      <button class="colab-df-quickchart" onclick="quickchart('df-7844a7b1-23ba-44b2-b4d9-105df334fb27')" title="Suggest charts" style="display:none;">
+    <div id="df-ce989653-f5ca-47ca-b582-79adfc1d20c6">
+      <button class="colab-df-quickchart" onclick="quickchart('df-ce989653-f5ca-47ca-b582-79adfc1d20c6')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -737,7 +737,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-7844a7b1-23ba-44b2-b4d9-105df334fb27 button');
+            document.querySelector('#df-ce989653-f5ca-47ca-b582-79adfc1d20c6 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -748,7 +748,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="4693ffce-985f-4037-ad09-5f6b493d9fd5" data-execution_count="8">
+<div id="cell-7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="e94c16e4-b6ea-42b8-85b4-e811b15f3398" data-execution_count="43">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Next, display a technical summary of the data to determine the data types of each column, and which columns have missing data.</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ds.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -779,7 +779,7 @@ memory usage: 584.6+ KB</code></pre>
 <h2 class="anchored" data-anchor-id="part-3-filter-the-data">Part 3: Filter the Data</h2>
 <p>Since we’re just interested in movies, we’ll need to <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html">filter out anything</a> that isn’t a movie for our analysis. The <code>type</code> feature contains this information.</p>
 <p>Once we have the subset, we should see how many rows it contains. There are a <a href="https://stackoverflow.com/a/38025280/28106">variety of ways to get the length of a data frame</a>.</p>
-<div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="9">
+<div id="cell-9" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="44">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pandas's filtering abilitites to select the subset of data</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># that represents movies, then calculate how many rows are in the filtered data.</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> ds[ds[<span class="st">'type'</span>] <span class="op">==</span> <span class="st">"Movie"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -787,11 +787,11 @@ memory usage: 584.6+ KB</code></pre>
 <section id="mpaa-ratings" class="level3">
 <h3 class="anchored" data-anchor-id="mpaa-ratings">MPAA Ratings</h3>
 <p>Now that we have only movies, let’s get a <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html">quick count of the values being used</a> in the <code>rating</code> feature.</p>
-<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="020a4bc9-cf5e-4819-f2ea-3f62a054dab7" data-execution_count="10">
+<div id="cell-11" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="2d2ba7b9-a856-49b4-e06f-b98791925f97" data-execution_count="45">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Determine the number of records for each value of the "rating" feature.</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Remember to count the values in your subset only, not in the original dataframe.</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'type'</span>].count()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="45">
 <pre><code>np.int64(4265)</code></pre>
 </div>
 </div>
@@ -800,21 +800,21 @@ memory usage: 584.6+ KB</code></pre>
 <h3 class="anchored" data-anchor-id="more-filtering">More Filtering</h3>
 <p>There are apparently some “made for TV” movies in the list that don’t fit the MPAA rating scheme.</p>
 <p>Let’s <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html">filter some more</a> to just see movies rated with the standard MPAA ratings of G, PG, PG-13, R, and NC-17.</p>
-<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="11">
+<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="46">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the list of movies to select a new subset containing only movies with</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># a standard MPAA rating. Calculate how many rows are in this new set, and</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># then see which ratings appear most often.</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>ds <span class="op">=</span> ds[(ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'G'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'PG'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'PG-13'</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">"R"</span>) <span class="op">|</span> (ds[<span class="st">'rating'</span>] <span class="op">==</span> <span class="st">'NC-17'</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="752e6979-8330-43d6-8df0-8be9d7f3d710" data-execution_count="12">
+<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="5aa43782-aada-4ce3-b1e2-96432c219f9a" data-execution_count="47">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'rating'</span>].count()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="47">
 <pre><code>np.int64(1013)</code></pre>
 </div>
 </div>
-<div id="cell-15" class="cell" data-outputid="4d04dc0b-f4aa-4e48-a7c3-4e73483e0534" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:115}}" data-execution_count="13">
+<div id="cell-15" class="cell" data-outputid="11341163-7bf5-4794-b5b9-8d07f2519cef" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:115}}" data-execution_count="48">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'rating'</span>].mode()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="48">
 <div>
 
 
@@ -869,39 +869,39 @@ alt.Chart(employees).mark_boxplot().encode(
   title='Salaries by Job Title'
 )</code></pre>
 <p>Like with Pandas, there is a <a href="https://altair-viz.github.io/getting_started/starting.html#the-chart-object">conventional way to import Altair</a> into your projects.</p>
-<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="14">
+<div id="cell-19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="49">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the Altair library the conventional way.</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Let’s create a barchart showing the count of each movie rating by using Altair’s aggregation capabilities.</p>
 <p>In <a href="https://altair-viz.github.io/getting_started/starting.html#data-transformation-aggregation">this example</a>, we see the x axis being set to a feature called <code>a</code>, and the y axis set to the <code>average()</code> of a feature called <code>b</code>.</p>
 <p>In our case, we want the x axis to be set to <code>rating</code> and the y axis to be the <code>count()</code> of <code>rating</code>.</p>
-<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:387}}" data-outputid="c911a175-491d-4027-b08f-bc18b67ffa0c" data-execution_count="15">
+<div id="cell-21" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:387}}" data-outputid="93b5faa2-38e1-4ab6-bb15-f8e9e618a0fc" data-execution_count="50">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use Altair to create a bar chart comparing the count of each movie rating</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>alt.Chart(ds).mark_bar().encode(</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'rating'</span>,</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'count(rating)'</span></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="15">
+<div class="cell-output cell-output-display" data-execution_count="50">
 
 <style>
-  #altair-viz-83e75b5fc50040958cc4cc630ff0c0be.vega-embed {
+  #altair-viz-28328e1740724189820770d04ca7e205.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-83e75b5fc50040958cc4cc630ff0c0be.vega-embed details,
-  #altair-viz-83e75b5fc50040958cc4cc630ff0c0be.vega-embed details summary {
+  #altair-viz-28328e1740724189820770d04ca7e205.vega-embed details,
+  #altair-viz-28328e1740724189820770d04ca7e205.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-83e75b5fc50040958cc4cc630ff0c0be"></div>
+<div id="altair-viz-28328e1740724189820770d04ca7e205"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-83e75b5fc50040958cc4cc630ff0c0be") {
-      outputDiv = document.getElementById("altair-viz-83e75b5fc50040958cc4cc630ff0c0be");
+    if (outputDiv.id !== "altair-viz-28328e1740724189820770d04ca7e205") {
+      outputDiv = document.getElementById("altair-viz-28328e1740724189820770d04ca7e205");
     }
 
     const paths = {
@@ -978,7 +978,7 @@ ax.set_ylabel("Annual salary in thousands of $USD")
 ax.set_xlabel("Job title")</code></pre>
 <p>Like with Pandas, there is a <a href="https://seaborn.pydata.org/tutorial/relational.html">conventional way to import Seaborn</a> into your projects.</p>
 <p>Optionally, you may wish to set some default chart aesthetics by <a href="https://seaborn.pydata.org/tutorial/aesthetics.html">setting the chart style</a>.</p>
-<div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="19">
+<div id="cell-24" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="51">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the seaborn library the conventional way. Then optionally configure</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the default chart style.</span></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -986,7 +986,7 @@ ax.set_xlabel("Job title")</code></pre>
 </div>
 <p>Since the <code>rating</code> column uses categorical data, we need to use Seaborn’s <a href="https://seaborn.pydata.org/tutorial/categorical.html">categorical visualizations</a>.</p>
 <p>In particular, we want a “count plot” that will display a count of movie ratings.</p>
-<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:518}}" data-outputid="6b103b87-564e-43ce-e3e9-1ebf5466b96d" data-execution_count="20">
+<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:518}}" data-outputid="768a8f13-ff6b-4788-d883-5579af9c17b4" data-execution_count="52">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use seaborn to create a count plot comparing the count of each movie rating</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sns.catplot(data <span class="op">=</span> ds, x <span class="op">=</span> <span class="st">'rating'</span>, kind <span class="op">=</span> <span class="st">'count'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -1015,7 +1015,7 @@ ax = employees[ ['job','salary'] ].plot().box()
 ax.set_title("Salaries by Job Title")
 ax.set_ylabel("Annual salary in thousands of $USD")
 ax.set_xlabel("Job title")</code></pre>
-<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:507}}" data-outputid="3e1850f7-28e1-4159-d53d-6e7fdd18659c" data-execution_count="22">
+<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:507}}" data-outputid="5f0e55ab-bf82-4ab0-f2d4-7258de1a76f0" data-execution_count="53">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pandas' built in plotting functions to create a count plot comparing the count of each movie rating</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This will be a little trickier than the other libraries, but one hint is that the pandas value_counts() function</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># actually returns a dataframe.</span></span>
@@ -1043,6 +1043,17 @@ ax.set_xlabel("Job title")</code></pre>
 <li><p>They would also like to see a separate report that includes only TV shows.</p></li>
 <li><p>For an upcoming community meeting, the group would like to present a simple chart showing “For Kids” and “For Adults” categories. The easiest way to accomplish this would be to <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/10_text_data.html">create a new column in your data frame that maps</a> each rating to the appropriate “For Kids” or “For Adults” label, then create a new visualization based on that column.</p></li>
 </ol>
+<div id="cell-33" class="cell" data-outputid="bbb32fdc-8f09-4464-e79d-a2c8246621fb" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:536}}" data-execution_count="60">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'age_group'</span>] <span class="op">=</span> ds[<span class="st">'rating'</span>].replace({<span class="st">'G'</span> : <span class="st">'For Kids'</span>, <span class="st">'PG'</span>: <span class="st">'For Kids'</span>, <span class="st">'PG-13'</span>: <span class="st">"For Adults"</span>, <span class="st">"R"</span>: <span class="st">"For Adults"</span>, <span class="st">'NC-17'</span>: <span class="st">"For Adults"</span>})</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'age_group'</span>].value_counts().plot.bar()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_01_files/figure-html/cell-16-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
