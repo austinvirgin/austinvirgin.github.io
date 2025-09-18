@@ -986,8 +986,16 @@ ax.set_xlabel("Job title")</code></pre>
 </div>
 <p>Since the <code>rating</code> column uses categorical data, we need to use Seaborn’s <a href="https://seaborn.pydata.org/tutorial/categorical.html">categorical visualizations</a>.</p>
 <p>In particular, we want a “count plot” that will display a count of movie ratings.</p>
-<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="17">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use seaborn to create a count plot comparing the count of each movie rating</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-26" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:518}}" data-outputid="6b103b87-564e-43ce-e3e9-1ebf5466b96d" data-execution_count="20">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use seaborn to create a count plot comparing the count of each movie rating</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sns.catplot(data <span class="op">=</span> ds, x <span class="op">=</span> <span class="st">'rating'</span>, kind <span class="op">=</span> <span class="st">'count'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_01_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 <section id="pandas-built-in-plotting" class="level3">
@@ -1007,10 +1015,18 @@ ax = employees[ ['job','salary'] ].plot().box()
 ax.set_title("Salaries by Job Title")
 ax.set_ylabel("Annual salary in thousands of $USD")
 ax.set_xlabel("Job title")</code></pre>
-<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;vscode&quot;,&quot;value&quot;:{&quot;languageId&quot;:&quot;python&quot;}}" data-execution_count="18">
+<div id="cell-28" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:507}}" data-outputid="3e1850f7-28e1-4159-d53d-6e7fdd18659c" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pandas' built in plotting functions to create a count plot comparing the count of each movie rating</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This will be a little trickier than the other libraries, but one hint is that the pandas value_counts() function</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># actually returns a dataframe.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co"># actually returns a dataframe.</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>ds[<span class="st">'rating'</span>].value_counts().plot.bar()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_01_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -1018,6 +1034,7 @@ ax.set_xlabel("Job title")</code></pre>
 <h1>Part 5: Interpretation and Conclusions</h1>
 <p>Now that you’ve seen the data, what is your conclusion? Is the watchdog group correct that Netflix has more movies for adults than for children? Are there any caveats you’d include in your analysis?</p>
 <p>Write your summary here:</p>
+<p>I believe there are more movies for adults than chldren because as a collective R, Pg-13, and NC-17 movies have more movies than there are children movies. That being said if teenagers are considered children then there are more children movies.</p>
 <section id="above-and-beyond" class="level2">
 <h2 class="anchored" data-anchor-id="above-and-beyond">🌟 Above and Beyond 🌟</h2>
 <p>After reviewing your findings, the watchdog group would like some additional questions answered:</p>
