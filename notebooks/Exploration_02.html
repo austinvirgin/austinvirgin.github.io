@@ -406,7 +406,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What kind of data is in each column?</li>
 <li>Do any of the columns have missing values?</li>
 </ul>
-<div id="cell-3" class="cell" data-execution_count="53">
+<div id="cell-3" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 1: Enter your code below to import Pandas according to the</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># conventional method. Then load the dataset into a Pandas dataframe.</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -416,12 +416,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-4" class="cell" data-outputid="faf156c0-0263-47ce-f3e6-7ce38b87f454" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:382}}" data-execution_count="54">
+<div id="cell-4" class="cell" data-outputid="9996f5a7-4212-4b23-d544-371031084b64" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="54">
-<div id="df-f232d1c4-9053-43c8-97b1-c31b6519a4dc" class="colab-df-container">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div id="df-1f245f6c-ae70-418d-acfc-20e2f0fdd245" class="colab-df-container">
     <div>
 
 
@@ -550,7 +550,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f232d1c4-9053-43c8-97b1-c31b6519a4dc')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1f245f6c-ae70-418d-acfc-20e2f0fdd245')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -600,12 +600,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f232d1c4-9053-43c8-97b1-c31b6519a4dc button.colab-df-convert');
+        document.querySelector('#df-1f245f6c-ae70-418d-acfc-20e2f0fdd245 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f232d1c4-9053-43c8-97b1-c31b6519a4dc');
+        const element = document.querySelector('#df-1f245f6c-ae70-418d-acfc-20e2f0fdd245');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -625,8 +625,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-d7f73aeb-ad5d-449e-9fa3-933a6c290fae">
-      <button class="colab-df-quickchart" onclick="quickchart('df-d7f73aeb-ad5d-449e-9fa3-933a6c290fae')" title="Suggest charts" style="display:none;">
+    <div id="df-2cd74c06-fe63-4cb1-a77f-ec30e1c38066">
+      <button class="colab-df-quickchart" onclick="quickchart('df-2cd74c06-fe63-4cb1-a77f-ec30e1c38066')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -742,7 +742,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d7f73aeb-ad5d-449e-9fa3-933a6c290fae button');
+            document.querySelector('#df-2cd74c06-fe63-4cb1-a77f-ec30e1c38066 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -753,7 +753,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-5" class="cell" data-outputid="ec1d2fe3-8958-465e-cb97-c83447a5cdfa" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="55">
+<div id="cell-5" class="cell" data-outputid="81a9253f-fe36-421a-855f-d0a14f1ae9b9" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -788,14 +788,14 @@ memory usage: 9.8+ KB</code></pre>
 <p>The marketing team has determined that when choosing a cereal, consumers are most interested in <code>calories</code>, <code>sugars</code>, <code>fiber</code>, <code>fat</code>, and <code>protein</code>.</p>
 <p>First, let’s calcuate some summary statistics for these categories across the entire dataset. We’re particularly intrested in the mean, median, standard deviation, min, and max values.</p>
 <p>There are <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html">multiple ways to accomplish this</a>.</p>
-<div id="cell-7" class="cell" data-outputid="b4f742cc-30c4-4947-fa30-572be766edb2" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:300}}" data-execution_count="56">
+<div id="cell-7" class="cell" data-outputid="d7bd8b83-283b-4435-a802-c16b52903552" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:300}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 2: Enter your code below to calculate summary statistics for the</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># calories, sugars, fiber, fat, and protein features.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> df[[<span class="st">"calories"</span>, <span class="st">"sugars"</span>, <span class="st">"fiber"</span>, <span class="st">"fat"</span>, <span class="st">"protein"</span>]]</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>summary.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="56">
-<div id="df-cd59d5b2-c550-4e13-95f3-d3b4aee007d9" class="colab-df-container">
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div id="df-4552066d-2d92-447e-8a00-c3cc288c8a01" class="colab-df-container">
     <div>
 
 
@@ -882,7 +882,7 @@ memory usage: 9.8+ KB</code></pre>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cd59d5b2-c550-4e13-95f3-d3b4aee007d9')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4552066d-2d92-447e-8a00-c3cc288c8a01')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -932,12 +932,12 @@ memory usage: 9.8+ KB</code></pre>
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cd59d5b2-c550-4e13-95f3-d3b4aee007d9 button.colab-df-convert');
+        document.querySelector('#df-4552066d-2d92-447e-8a00-c3cc288c8a01 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cd59d5b2-c550-4e13-95f3-d3b4aee007d9');
+        const element = document.querySelector('#df-4552066d-2d92-447e-8a00-c3cc288c8a01');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -957,8 +957,8 @@ memory usage: 9.8+ KB</code></pre>
   </div>
 
 
-    <div id="df-a5085412-b508-4296-918d-6fddc82d834a">
-      <button class="colab-df-quickchart" onclick="quickchart('df-a5085412-b508-4296-918d-6fddc82d834a')" title="Suggest charts" style="display:none;">
+    <div id="df-f520cb5f-d45d-4df2-a7c8-9b7d6fd8392a">
+      <button class="colab-df-quickchart" onclick="quickchart('df-f520cb5f-d45d-4df2-a7c8-9b7d6fd8392a')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1074,7 +1074,7 @@ memory usage: 9.8+ KB</code></pre>
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-a5085412-b508-4296-918d-6fddc82d834a button');
+            document.querySelector('#df-f520cb5f-d45d-4df2-a7c8-9b7d6fd8392a button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1101,14 +1101,14 @@ R = Ralston Purina</code></pre>
 <blockquote class="blockquote">
 <p>Note: While the tutorial linked above uses the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.replace.html"><code>replace</code></a> function, using the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html"><code>map</code></a> function instead can often be much faster and more memory efficient, especially for large datasets.</p>
 </blockquote>
-<div id="cell-9" class="cell" data-outputid="bbf458f2-7342-4b71-c924-846fee76cf5e" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:617}}" data-execution_count="57">
+<div id="cell-9" class="cell" data-outputid="ff5b7577-c8bf-4ba5-f4bd-d1743035b654" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:424}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the count of values for the manufacturer code ("mfr" column), then</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column containing the appropriate manufacturer names.</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'manufacturer'</span>] <span class="op">=</span> df[<span class="st">'mfr'</span>].<span class="bu">map</span>({<span class="st">'A'</span> : <span class="st">"American Home Food Products"</span>, <span class="st">"G"</span> : <span class="st">"General Mills"</span>, <span class="st">"K"</span> : <span class="st">"Kellogs"</span>, <span class="st">"N"</span>: <span class="st">"Nabisco"</span>, <span class="st">"P"</span> : <span class="st">"Post"</span>, <span class="st">"Q"</span> : <span class="st">"Quaker Oats"</span>, <span class="st">"R"</span> : <span class="st">"Ralston Purina"</span>})</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="57">
-<div id="df-dc0fac2b-fe65-4688-af1f-490673bc5978" class="colab-df-container">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div id="df-42f7b5f0-474c-4eee-bf27-5bb026bfb9cd" class="colab-df-container">
     <div>
 
 
@@ -1364,7 +1364,7 @@ R = Ralston Purina</code></pre>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-dc0fac2b-fe65-4688-af1f-490673bc5978')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-42f7b5f0-474c-4eee-bf27-5bb026bfb9cd')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1414,12 +1414,12 @@ R = Ralston Purina</code></pre>
 
     <script>
       const buttonEl =
-        document.querySelector('#df-dc0fac2b-fe65-4688-af1f-490673bc5978 button.colab-df-convert');
+        document.querySelector('#df-42f7b5f0-474c-4eee-bf27-5bb026bfb9cd button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-dc0fac2b-fe65-4688-af1f-490673bc5978');
+        const element = document.querySelector('#df-42f7b5f0-474c-4eee-bf27-5bb026bfb9cd');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1439,8 +1439,8 @@ R = Ralston Purina</code></pre>
   </div>
 
 
-    <div id="df-e83982f0-df83-4242-8f78-c5f004ce1a01">
-      <button class="colab-df-quickchart" onclick="quickchart('df-e83982f0-df83-4242-8f78-c5f004ce1a01')" title="Suggest charts" style="display:none;">
+    <div id="df-d663ac0f-80f5-4720-b5de-f04a2177eb34">
+      <button class="colab-df-quickchart" onclick="quickchart('df-d663ac0f-80f5-4720-b5de-f04a2177eb34')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1556,14 +1556,14 @@ R = Ralston Purina</code></pre>
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-e83982f0-df83-4242-8f78-c5f004ce1a01 button');
+            document.querySelector('#df-d663ac0f-80f5-4720-b5de-f04a2177eb34 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
     </div>
 
-  <div id="id_8da7626c-b843-4808-9bce-ecf1b7b0b07a">
+  <div id="id_650cb6fd-3135-435a-b5b9-785114718ac8">
     <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -1604,7 +1604,7 @@ R = Ralston Purina</code></pre>
     <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_8da7626c-b843-4808-9bce-ecf1b7b0b07a button.colab-df-generate');
+        document.querySelector('#id_650cb6fd-3135-435a-b5b9-785114718ac8 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -1624,8 +1624,9 @@ R = Ralston Purina</code></pre>
 <h2 class="anchored" data-anchor-id="part-4-visualization">Part 4: Visualization</h2>
 <p>Let’s do some more data exploration visually.</p>
 <p>Import your visualization library of choice and set any needed configuration options.</p>
-<div id="cell-11" class="cell" data-execution_count="58">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import your visualization library</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-11" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import your visualization library</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="sugar-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="sugar-distribution">Sugar Distribution</h3>
@@ -1636,8 +1637,36 @@ R = Ralston Purina</code></pre>
 <li><p>A scatter plot showing the relationship between sugar and calories.</p></li>
 <li><p>A box plot showing the distribution of sugar content by manufacturer.</p></li>
 </ul>
-<div id="cell-13" class="cell" data-execution_count="59">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the three visualzations requested by the the marketing team</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-13" class="cell" data-outputid="feb87109-7f90-4a7d-c144-89d3cba4cc5b" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:523}}" data-execution_count="18">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the three visualzations requested by the the marketing team</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>sns.displot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">"sugars"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_02_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-14" class="cell" data-outputid="52b97200-e882-43bf-f6e5-215afedaba45" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}}" data-execution_count="19">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'sugars'</span>, y <span class="op">=</span> <span class="st">'calories'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_02_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-15" class="cell" data-outputid="7c561c48-3012-43d3-f693-43c7bab6fbec" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}}" data-execution_count="21">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'manufacturer'</span>, y <span class="op">=</span> <span class="st">'sugars'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_02_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>
