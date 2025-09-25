@@ -409,16 +409,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What kind of data is in each column?</li>
 <li>Do any of the columns have missing values?</li>
 </ul>
-<div id="cell-3" class="cell" data-execution_count="1">
+<div id="cell-3" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/iris.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-4" class="cell" data-outputid="0de7d9a3-24ba-415a-9054-724c529dc4c7" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:654}}" data-execution_count="5">
+<div id="cell-4" class="cell" data-outputid="f720e1a8-80b4-4a6a-df0f-ac774d79287e" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:654}}" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>display(df.head())</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>display(df.nunique())</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>display(df.dtypes)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="df-f8aa400b-8bb8-415b-b206-1286bfb335c4" class="colab-df-container">
+<div id="df-c40ed15d-0475-406b-9004-d23828873b94" class="colab-df-container">
     <div>
 
 
@@ -481,7 +481,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f8aa400b-8bb8-415b-b206-1286bfb335c4')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c40ed15d-0475-406b-9004-d23828873b94')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -531,12 +531,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f8aa400b-8bb8-415b-b206-1286bfb335c4 button.colab-df-convert');
+        document.querySelector('#df-c40ed15d-0475-406b-9004-d23828873b94 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f8aa400b-8bb8-415b-b206-1286bfb335c4');
+        const element = document.querySelector('#df-c40ed15d-0475-406b-9004-d23828873b94');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -556,8 +556,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-175628e5-6bd3-40fe-a4c5-c867941cf837">
-      <button class="colab-df-quickchart" onclick="quickchart('df-175628e5-6bd3-40fe-a4c5-c867941cf837')" title="Suggest charts" style="display:none;">
+    <div id="df-a793c303-2cd2-429e-8474-76278e4dc277">
+      <button class="colab-df-quickchart" onclick="quickchart('df-a793c303-2cd2-429e-8474-76278e4dc277')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -673,7 +673,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-175628e5-6bd3-40fe-a4c5-c867941cf837 button');
+            document.querySelector('#df-a793c303-2cd2-429e-8474-76278e4dc277 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -758,11 +758,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div><br><label><b>dtype:</b> object</label>
 </div>
 </div>
-<div id="cell-5" class="cell" data-outputid="4a445775-db65-4fb0-8108-911bcc94e308" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:524}}" data-execution_count="9">
+<div id="cell-5" class="cell" data-outputid="6c8f98c9-6c77-44cf-9f81-d0927ed62cb3" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:524}}" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>display(df.describe())</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>display(df.isna().<span class="bu">sum</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="df-50b1de6a-410a-4423-b732-db829ee6a2e1" class="colab-df-container">
+<div id="df-e58a0bd5-6e37-4673-b5a8-8060a1d0442d" class="colab-df-container">
     <div>
 
 
@@ -840,7 +840,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-50b1de6a-410a-4423-b732-db829ee6a2e1')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e58a0bd5-6e37-4673-b5a8-8060a1d0442d')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -890,12 +890,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-50b1de6a-410a-4423-b732-db829ee6a2e1 button.colab-df-convert');
+        document.querySelector('#df-e58a0bd5-6e37-4673-b5a8-8060a1d0442d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-50b1de6a-410a-4423-b732-db829ee6a2e1');
+        const element = document.querySelector('#df-e58a0bd5-6e37-4673-b5a8-8060a1d0442d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -915,8 +915,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-a4918e45-52d4-445d-a8a1-0641c55aa7e6">
-      <button class="colab-df-quickchart" onclick="quickchart('df-a4918e45-52d4-445d-a8a1-0641c55aa7e6')" title="Suggest charts" style="display:none;">
+    <div id="df-3bb41de3-a595-4f84-a97b-0df0e1a9e7e2">
+      <button class="colab-df-quickchart" onclick="quickchart('df-3bb41de3-a595-4f84-a97b-0df0e1a9e7e2')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1032,7 +1032,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-a4918e45-52d4-445d-a8a1-0641c55aa7e6 button');
+            document.querySelector('#df-3bb41de3-a595-4f84-a97b-0df0e1a9e7e2 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1085,7 +1085,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="part-b-visualize-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="part-b-visualize-the-data">Part B: Visualize the Data</h2>
 <p>Use your preferred visualization library to create a scatterplot showing petal length vs petal width. You should plot each flower species as a different color on the scatter plot.</p>
-<div id="cell-7" class="cell" data-outputid="57681038-cda1-44ce-9b6a-d4edaf77b15c" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:523}}" data-execution_count="12">
+<div id="cell-7" class="cell" data-outputid="3cbdafb6-a02b-4559-d28a-594aa2a7e617" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:523}}" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>sns.lmplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'petal_length'</span>, y <span class="op">=</span> <span class="st">'petal_width'</span>, hue <span class="op">=</span> <span class="st">'species'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1123,14 +1123,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="step-2.-partition-the-data-into-features-and-targets">Step 2. Partition the Data into Features and Targets</h3>
 <p>First, we’ll create a dataframe called “X” containing the features of the data we want to use to make our predictions. In this case, that will be the <code>sepal_length</code>, <code>sepal_width</code>, <code>petal_length</code>, and <code>petal_width</code> features.</p>
 <p>(The name “X” isn’t special, but uppercase X is the conventional name for our feature dataset, because that’s what statisticians use to refer to a matrix of independent variables)</p>
-<div id="cell-10" class="cell" data-execution_count="16">
+<div id="cell-10" class="cell" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new dataframe called X that contians the features we're going</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># to use to make predictions</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df[[<span class="st">'sepal_length'</span>, <span class="st">'sepal_width'</span>, <span class="st">'petal_length'</span>, <span class="st">'petal_width'</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Next we’ll create a dataframe called “y” containing the target variable, or the set of values we want to predict. In this case, that will be <code>species</code>.</p>
 <p>(Once again, the name “y” isn’t special, but lowercase y is the conventional name for a list of targets, because that’s what statisticians use to refer to a vector of dependent variables)</p>
-<div id="cell-12" class="cell" data-execution_count="19">
+<div id="cell-12" class="cell" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new dataframe called y that contians the target we're</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># trying to predict</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[[<span class="st">'species'</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1143,7 +1143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We’ll then use our test sets to test how well our model has learned from the training data.</p>
 <p>While we could use a bunch of python code to do this step, the sklearn library has lots of built-in functions to handle common data manipulations related to machine learning.</p>
 <p>For this step, we’ll use the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html">train_test_split()</a> function.</p>
-<div id="cell-14" class="cell" data-execution_count="23">
+<div id="cell-14" class="cell" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import and use the train_test_split() function to split the X and y</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># dataframes into training and test sets.</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1156,11 +1156,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>After creating the training and test splits, output the head() of each one and notice how they row numbers have been randomized.</p>
 <p>Also notice that X_train and y_train’s row numbers match up, as do X_test and y_test’s row numbers.</p>
-<div id="cell-16" class="cell" data-outputid="f084adeb-c9e4-4731-fd5b-5e5ab87df500" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:395}}" data-execution_count="25">
+<div id="cell-16" class="cell" data-outputid="e34c5e00-76f5-465c-d6de-32386855787a" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:395}}" data-execution_count="32">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>display(X_train.head())</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>display(y_train.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="df-6762e751-e4e8-4a50-ad64-bf3e0a038ceb" class="colab-df-container">
+<div id="df-2d835c25-7e1f-419a-adb5-58a2e6f0f740" class="colab-df-container">
     <div>
 
 
@@ -1217,7 +1217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6762e751-e4e8-4a50-ad64-bf3e0a038ceb')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-2d835c25-7e1f-419a-adb5-58a2e6f0f740')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1267,12 +1267,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6762e751-e4e8-4a50-ad64-bf3e0a038ceb button.colab-df-convert');
+        document.querySelector('#df-2d835c25-7e1f-419a-adb5-58a2e6f0f740 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6762e751-e4e8-4a50-ad64-bf3e0a038ceb');
+        const element = document.querySelector('#df-2d835c25-7e1f-419a-adb5-58a2e6f0f740');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1292,8 +1292,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-1a9eddc3-5dcb-4e1a-9436-2b6f29835ad6">
-      <button class="colab-df-quickchart" onclick="quickchart('df-1a9eddc3-5dcb-4e1a-9436-2b6f29835ad6')" title="Suggest charts" style="display:none;">
+    <div id="df-5da746e7-ef90-4c2c-9317-08506903fad5">
+      <button class="colab-df-quickchart" onclick="quickchart('df-5da746e7-ef90-4c2c-9317-08506903fad5')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1409,7 +1409,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-1a9eddc3-5dcb-4e1a-9436-2b6f29835ad6 button');
+            document.querySelector('#df-5da746e7-ef90-4c2c-9317-08506903fad5 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1420,7 +1420,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="df-f5cb5cef-cce0-4d31-aaec-fa7321f5bba7" class="colab-df-container">
+<div id="df-5864d00d-2314-437e-9850-85ebaee6b86c" class="colab-df-container">
     <div>
 
 
@@ -1459,7 +1459,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-f5cb5cef-cce0-4d31-aaec-fa7321f5bba7')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5864d00d-2314-437e-9850-85ebaee6b86c')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1509,12 +1509,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-f5cb5cef-cce0-4d31-aaec-fa7321f5bba7 button.colab-df-convert');
+        document.querySelector('#df-5864d00d-2314-437e-9850-85ebaee6b86c button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-f5cb5cef-cce0-4d31-aaec-fa7321f5bba7');
+        const element = document.querySelector('#df-5864d00d-2314-437e-9850-85ebaee6b86c');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1534,8 +1534,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-c4fcb957-3a75-4a11-9245-d945188442ec">
-      <button class="colab-df-quickchart" onclick="quickchart('df-c4fcb957-3a75-4a11-9245-d945188442ec')" title="Suggest charts" style="display:none;">
+    <div id="df-87680a1b-5806-4e5d-8940-2d975fa88c94">
+      <button class="colab-df-quickchart" onclick="quickchart('df-87680a1b-5806-4e5d-8940-2d975fa88c94')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1651,7 +1651,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-c4fcb957-3a75-4a11-9245-d945188442ec button');
+            document.querySelector('#df-87680a1b-5806-4e5d-8940-2d975fa88c94 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1662,11 +1662,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 </div>
-<div id="cell-17" class="cell" data-outputid="482ca198-4d98-45fe-e3e8-fde67f60bbaf" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:395}}" data-execution_count="24">
+<div id="cell-17" class="cell" data-outputid="8cce8bb4-5a55-4945-912a-d5999a774cbf" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:395}}" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>display(X_test.head())</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>display(y_test.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div id="df-32d628cd-36a0-4dc5-81a9-65176f65fd9e" class="colab-df-container">
+<div id="df-6c8628d0-4447-43a4-8510-21575e9f1325" class="colab-df-container">
     <div>
 
 
@@ -1723,7 +1723,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-32d628cd-36a0-4dc5-81a9-65176f65fd9e')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6c8628d0-4447-43a4-8510-21575e9f1325')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -1773,12 +1773,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-32d628cd-36a0-4dc5-81a9-65176f65fd9e button.colab-df-convert');
+        document.querySelector('#df-6c8628d0-4447-43a4-8510-21575e9f1325 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-32d628cd-36a0-4dc5-81a9-65176f65fd9e');
+        const element = document.querySelector('#df-6c8628d0-4447-43a4-8510-21575e9f1325');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1798,8 +1798,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-1d6f32cb-e853-4468-9544-87d26847cdae">
-      <button class="colab-df-quickchart" onclick="quickchart('df-1d6f32cb-e853-4468-9544-87d26847cdae')" title="Suggest charts" style="display:none;">
+    <div id="df-59c530e5-d050-4f96-a80d-31681de8fd49">
+      <button class="colab-df-quickchart" onclick="quickchart('df-59c530e5-d050-4f96-a80d-31681de8fd49')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -1915,7 +1915,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-1d6f32cb-e853-4468-9544-87d26847cdae button');
+            document.querySelector('#df-59c530e5-d050-4f96-a80d-31681de8fd49 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -1926,7 +1926,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 <div class="cell-output cell-output-display">
-<div id="df-ecaa6f19-4309-4779-a7cf-cc4fb003e93c" class="colab-df-container">
+<div id="df-57b125b2-8474-4a5e-824e-6fed0aabc01f" class="colab-df-container">
     <div>
 
 
@@ -1965,7 +1965,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-ecaa6f19-4309-4779-a7cf-cc4fb003e93c')" title="Convert this dataframe to an interactive table." style="display:none;">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-57b125b2-8474-4a5e-824e-6fed0aabc01f')" title="Convert this dataframe to an interactive table." style="display:none;">
 
   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
     <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -2015,12 +2015,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     <script>
       const buttonEl =
-        document.querySelector('#df-ecaa6f19-4309-4779-a7cf-cc4fb003e93c button.colab-df-convert');
+        document.querySelector('#df-57b125b2-8474-4a5e-824e-6fed0aabc01f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-ecaa6f19-4309-4779-a7cf-cc4fb003e93c');
+        const element = document.querySelector('#df-57b125b2-8474-4a5e-824e-6fed0aabc01f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2040,8 +2040,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 
 
-    <div id="df-267615c0-fd92-4649-83d3-bbaea68282aa">
-      <button class="colab-df-quickchart" onclick="quickchart('df-267615c0-fd92-4649-83d3-bbaea68282aa')" title="Suggest charts" style="display:none;">
+    <div id="df-a5053f1f-176c-4173-b462-0a27c46518b1">
+      <button class="colab-df-quickchart" onclick="quickchart('df-a5053f1f-176c-4173-b462-0a27c46518b1')" title="Suggest charts" style="display:none;">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
     <g>
@@ -2157,7 +2157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-267615c0-fd92-4649-83d3-bbaea68282aa button');
+            document.querySelector('#df-a5053f1f-176c-4173-b462-0a27c46518b1 button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -2182,15 +2182,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>whatever = ClassName( parameter_one = value, parameter_two = something_else, etc...)</code></pre>
 <p>In our case, the class name is <code>KNeighborsClassifer</code>. It doesn’t matter what we call the variable that holds the instance, but one popular convention is to call classifier instances <code>clf</code>, so that’s what you’ll see in the sklearn documentation.</p>
 <p>The only parameter we want to configure is the <code>n_neighbors</code> parameter, which controls the value of <code>k</code> in the kNN algorithm.</p>
-<div id="cell-20" class="cell">
+<div id="cell-20" class="cell" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the KNeighborsClassifier class from sklearn</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that it's in the neighbors submodule. See the example code in the</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># documentation for details on how to import it</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cell-21" class="cell">
+<div id="cell-21" class="cell" data-execution_count="35">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an instance of the model, configuring it to use the 3 nearest neighbors</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># store the instance in a variable</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># store the instance in a variable</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>clf <span class="op">=</span> KNeighborsClassifier(n_neighbors <span class="op">=</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="step-5-train-the-model" class="level3">
@@ -2198,9 +2199,432 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Next we’ll train the model. We do this by providing it with the training data we split off from the dataset in step 3.</p>
 <p>The model “learns” how to associate the feature values (X) with the targets (y). The exact process it uses to learn how to do this depends on which algorithm we’re using.</p>
 <p>Sometimes, this is called “fitting the data to the model”, so in sklearn, we perform this step using the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier.fit">fit()</a> method.</p>
-<div id="cell-23" class="cell">
+<div id="cell-23" class="cell" data-outputid="5c721b74-aa7d-4f87-ace0-748adc964eca" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:135}}" data-execution_count="49">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Call the "fit" method of the classifier instance we created in step 4.</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Pass it the X_train and y_train data so that it can learn to make predictions</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Pass it the X_train and y_train data so that it can learn to make predictions</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>clf.fit(X_train, y_train)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/usr/local/lib/python3.12/dist-packages/sklearn/neighbors/_classification.py:239: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples,), for example using ravel().
+  return self._fit(X, y)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="49">
+<style>#sk-container-id-3 {
+  /* Definition of color scheme common for light and dark mode */
+  --sklearn-color-text: #000;
+  --sklearn-color-text-muted: #666;
+  --sklearn-color-line: gray;
+  /* Definition of color scheme for unfitted estimators */
+  --sklearn-color-unfitted-level-0: #fff5e6;
+  --sklearn-color-unfitted-level-1: #f6e4d2;
+  --sklearn-color-unfitted-level-2: #ffe0b3;
+  --sklearn-color-unfitted-level-3: chocolate;
+  /* Definition of color scheme for fitted estimators */
+  --sklearn-color-fitted-level-0: #f0f8ff;
+  --sklearn-color-fitted-level-1: #d4ebff;
+  --sklearn-color-fitted-level-2: #b3dbfd;
+  --sklearn-color-fitted-level-3: cornflowerblue;
+
+  /* Specific color for light theme */
+  --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, white)));
+  --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, black)));
+  --sklearn-color-icon: #696969;
+
+  @media (prefers-color-scheme: dark) {
+    /* Redefinition of color scheme for dark theme */
+    --sklearn-color-text-on-default-background: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-background: var(--sg-background-color, var(--theme-background, var(--jp-layout-color0, #111)));
+    --sklearn-color-border-box: var(--sg-text-color, var(--theme-code-foreground, var(--jp-content-font-color1, white)));
+    --sklearn-color-icon: #878787;
+  }
+}
+
+#sk-container-id-3 {
+  color: var(--sklearn-color-text);
+}
+
+#sk-container-id-3 pre {
+  padding: 0;
+}
+
+#sk-container-id-3 input.sk-hidden--visually {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#sk-container-id-3 div.sk-dashed-wrapped {
+  border: 1px dashed var(--sklearn-color-line);
+  margin: 0 0.4em 0.5em 0.4em;
+  box-sizing: border-box;
+  padding-bottom: 0.4em;
+  background-color: var(--sklearn-color-background);
+}
+
+#sk-container-id-3 div.sk-container {
+  /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
+     but bootstrap.min.css set `[hidden] { display: none !important; }`
+     so we also need the `!important` here to be able to override the
+     default hidden behavior on the sphinx rendered scikit-learn.org.
+     See: https://github.com/scikit-learn/scikit-learn/issues/21755 */
+  display: inline-block !important;
+  position: relative;
+}
+
+#sk-container-id-3 div.sk-text-repr-fallback {
+  display: none;
+}
+
+div.sk-parallel-item,
+div.sk-serial,
+div.sk-item {
+  /* draw centered vertical line to link estimators */
+  background-image: linear-gradient(var(--sklearn-color-text-on-default-background), var(--sklearn-color-text-on-default-background));
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Parallel-specific style estimator block */
+
+#sk-container-id-3 div.sk-parallel-item::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
+  flex-grow: 1;
+}
+
+#sk-container-id-3 div.sk-parallel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--sklearn-color-background);
+  position: relative;
+}
+
+#sk-container-id-3 div.sk-parallel-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#sk-container-id-3 div.sk-parallel-item:first-child::after {
+  align-self: flex-end;
+  width: 50%;
+}
+
+#sk-container-id-3 div.sk-parallel-item:last-child::after {
+  align-self: flex-start;
+  width: 50%;
+}
+
+#sk-container-id-3 div.sk-parallel-item:only-child::after {
+  width: 0;
+}
+
+/* Serial-specific style estimator block */
+
+#sk-container-id-3 div.sk-serial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--sklearn-color-background);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+
+/* Toggleable style: style used for estimator/Pipeline/ColumnTransformer box that is
+clickable and can be expanded/collapsed.
+- Pipeline and ColumnTransformer use this feature and define the default style
+- Estimators will overwrite some part of the style using the `sk-estimator` class
+*/
+
+/* Pipeline and ColumnTransformer style (default) */
+
+#sk-container-id-3 div.sk-toggleable {
+  /* Default theme specific background. It is overwritten whether we have a
+  specific estimator or a Pipeline/ColumnTransformer */
+  background-color: var(--sklearn-color-background);
+}
+
+/* Toggleable label */
+#sk-container-id-3 label.sk-toggleable__label {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.5em;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#sk-container-id-3 label.sk-toggleable__label .caption {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: var(--sklearn-color-text-muted);
+}
+
+#sk-container-id-3 label.sk-toggleable__label-arrow:before {
+  /* Arrow on the left of the label */
+  content: "▸";
+  float: left;
+  margin-right: 0.25em;
+  color: var(--sklearn-color-icon);
+}
+
+#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {
+  color: var(--sklearn-color-text);
+}
+
+/* Toggleable content - dropdown */
+
+#sk-container-id-3 div.sk-toggleable__content {
+  max-height: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-align: left;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content pre {
+  margin: 0.2em;
+  border-radius: 0.25em;
+  color: var(--sklearn-color-text);
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-toggleable__content.fitted pre {
+  /* unfitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+  /* Expand drop-down */
+  max-height: 200px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+  content: "▾";
+}
+
+/* Pipeline/ColumnTransformer-specific style */
+
+#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator-specific style */
+
+/* Colorize estimator box */
+#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+#sk-container-id-3 div.sk-label label.sk-toggleable__label,
+#sk-container-id-3 div.sk-label label {
+  /* The background is the default theme color */
+  color: var(--sklearn-color-text-on-default-background);
+}
+
+/* On hover, darken the color of the background */
+#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+/* Label box, darken color on hover, fitted */
+#sk-container-id-3 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+  color: var(--sklearn-color-text);
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Estimator label */
+
+#sk-container-id-3 div.sk-label label {
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+#sk-container-id-3 div.sk-label-container {
+  text-align: center;
+}
+
+/* Estimator-specific */
+#sk-container-id-3 div.sk-estimator {
+  font-family: monospace;
+  border: 1px dotted var(--sklearn-color-border-box);
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-0);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-0);
+}
+
+/* on hover */
+#sk-container-id-3 div.sk-estimator:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-2);
+}
+
+#sk-container-id-3 div.sk-estimator.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-2);
+}
+
+/* Specification for estimator info (e.g. "i" and "?") */
+
+/* Common style for "i" and "?" */
+
+.sk-estimator-doc-link,
+a:link.sk-estimator-doc-link,
+a:visited.sk-estimator-doc-link {
+  float: right;
+  font-size: smaller;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1em;
+  height: 1em;
+  width: 1em;
+  text-decoration: none !important;
+  margin-left: 0.5em;
+  text-align: center;
+  /* unfitted */
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+  color: var(--sklearn-color-unfitted-level-1);
+}
+
+.sk-estimator-doc-link.fitted,
+a:link.sk-estimator-doc-link.fitted,
+a:visited.sk-estimator-doc-link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+div.sk-estimator:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover,
+div.sk-label-container:hover .sk-estimator-doc-link:hover,
+.sk-estimator-doc-link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+div.sk-estimator.fitted:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover,
+div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
+.sk-estimator-doc-link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+/* Span, style for the box shown on hovering the info icon */
+.sk-estimator-doc-link span {
+  display: none;
+  z-index: 9999;
+  position: relative;
+  font-weight: normal;
+  right: .2ex;
+  padding: .5ex;
+  margin: .5ex;
+  width: min-content;
+  min-width: 20ex;
+  max-width: 50ex;
+  color: var(--sklearn-color-text);
+  box-shadow: 2pt 2pt 4pt #999;
+  /* unfitted */
+  background: var(--sklearn-color-unfitted-level-0);
+  border: .5pt solid var(--sklearn-color-unfitted-level-3);
+}
+
+.sk-estimator-doc-link.fitted span {
+  /* fitted */
+  background: var(--sklearn-color-fitted-level-0);
+  border: var(--sklearn-color-fitted-level-3);
+}
+
+.sk-estimator-doc-link:hover span {
+  display: block;
+}
+
+/* "?"-specific style due to the `<a>` HTML tag */
+
+#sk-container-id-3 a.estimator_doc_link {
+  float: right;
+  font-size: 1rem;
+  line-height: 1em;
+  font-family: monospace;
+  background-color: var(--sklearn-color-background);
+  border-radius: 1rem;
+  height: 1rem;
+  width: 1rem;
+  text-decoration: none;
+  /* unfitted */
+  color: var(--sklearn-color-unfitted-level-1);
+  border: var(--sklearn-color-unfitted-level-1) 1pt solid;
+}
+
+#sk-container-id-3 a.estimator_doc_link.fitted {
+  /* fitted */
+  border: var(--sklearn-color-fitted-level-1) 1pt solid;
+  color: var(--sklearn-color-fitted-level-1);
+}
+
+/* On hover */
+#sk-container-id-3 a.estimator_doc_link:hover {
+  /* unfitted */
+  background-color: var(--sklearn-color-unfitted-level-3);
+  color: var(--sklearn-color-background);
+  text-decoration: none;
+}
+
+#sk-container-id-3 a.estimator_doc_link.fitted:hover {
+  /* fitted */
+  background-color: var(--sklearn-color-fitted-level-3);
+}
+</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>KNeighborsClassifier(n_neighbors=3)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked=""><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>KNeighborsClassifier</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.neighbors.KNeighborsClassifier.html">?<span>Documentation for KNeighborsClassifier</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>KNeighborsClassifier(n_neighbors=3)</pre></div> </div></div></div></div>
+</div>
 </div>
 </section>
 </section>
@@ -2217,12 +2641,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier.predict">predict()</a>, which returns the most likely prediction for each sample.</p></li>
 <li><p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier.predict_proba">predict_proba()</a> which returns a list of probabilities for each sample. The probabilities tell us how confident the model is that the corresponding sample belongs to a particular class.</p></li>
 </ul>
-<div id="cell-26" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the predict() method to get a list of predictions for the samples in our</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># test data. Then output those predictions</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-26" class="cell" data-outputid="90d74c5d-2465-419a-f1a7-5cbbb388fcc3" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="51">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the predict() method to get a list of predictions for the samples in our</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># test data. Then output those predictions</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>y_predictions <span class="op">=</span> clf.predict(X_test)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>y_predictions</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="51">
+<pre><code>array(['Iris-virginica', 'Iris-virginica', 'Iris-versicolor',
+       'Iris-setosa', 'Iris-virginica', 'Iris-versicolor', 'Iris-setosa',
+       'Iris-virginica', 'Iris-setosa', 'Iris-versicolor',
+       'Iris-versicolor', 'Iris-setosa', 'Iris-virginica', 'Iris-setosa',
+       'Iris-setosa', 'Iris-versicolor', 'Iris-versicolor',
+       'Iris-versicolor', 'Iris-virginica', 'Iris-setosa',
+       'Iris-virginica', 'Iris-setosa', 'Iris-setosa', 'Iris-setosa',
+       'Iris-virginica', 'Iris-setosa', 'Iris-setosa', 'Iris-virginica',
+       'Iris-versicolor', 'Iris-versicolor'], dtype=object)</code></pre>
 </div>
-<div id="cell-27" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Just a quick comparison with y_test to see if they match up</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="cell-27" class="cell" data-outputid="e159acca-c1e0-4391-bc39-c2178b4b0b33" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="53">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Just a quick comparison with y_test to see if they match up</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>clf.predict_proba(X_test)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="53">
+<pre><code>array([[0.        , 0.        , 1.        ],
+       [0.        , 0.        , 1.        ],
+       [0.        , 1.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [0.        , 1.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 1.        , 0.        ],
+       [0.        , 1.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [1.        , 0.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.66666667, 0.33333333],
+       [0.        , 1.        , 0.        ],
+       [0.        , 1.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [1.        , 0.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [1.        , 0.        , 0.        ],
+       [1.        , 0.        , 0.        ],
+       [0.        , 0.        , 1.        ],
+       [0.        , 1.        , 0.        ],
+       [0.        , 1.        , 0.        ]])</code></pre>
+</div>
 </div>
 </section>
 <section id="step-7-evaluate-the-model" class="level3">
@@ -2233,9 +2703,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="accuracy" class="level4">
 <h4 class="anchored" data-anchor-id="accuracy">Accuracy</h4>
 <p>Since this is a multiclass classification problem (“multiclass” means we have more than two options we’re choosing from), we can get a quick estimate from the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score">accuracy_score()</a> function, which tells us the percent of correct predictions made by the model.</p>
-<div id="cell-30" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the accuracy_score function and use it to determine</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># how accurate the models predictions were for our test data</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-30" class="cell" data-outputid="df1a1a1a-8938-45f8-9a71-5e04e4a925f8" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="54">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the accuracy_score function and use it to determine</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># how accurate the models predictions were for our test data</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>accuracy_score(y_test, y_predictions)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="54">
+<pre><code>0.9666666666666667</code></pre>
+</div>
 </div>
 </section>
 <section id="confusion-matrix" class="level4">
@@ -2243,9 +2718,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>While the accuracy score tells us a little about the model’s performance, it doesn’t tell us much.</p>
 <p>For example, we know how often the model was correct, but we don’t know when it was wrong or why.</p>
 <p>We can get this information from the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html#sklearn.metrics.confusion_matrix">confusion_matrix</a> function.</p>
-<div id="cell-32" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the confusion_matrix function and use it to generate a confusion</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># matrix of our model results.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-32" class="cell" data-outputid="6afa7e3a-6a6e-4b76-8be6-664a4b3ec708" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="58">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the confusion_matrix function and use it to generate a confusion</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># matrix of our model results.</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>matrix <span class="op">=</span> confusion_matrix(y_test, y_predictions)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>matrix</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="58">
+<pre><code>array([[12,  0,  0],
+       [ 0,  8,  0],
+       [ 0,  1,  9]])</code></pre>
+</div>
 </div>
 </section>
 <section id="confusion-matrix-plot" class="level4">
@@ -2254,9 +2737,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This function works a little bit differently than the others. It takes as parameters your model instance, and then options for making the chart display the way you want, and outputs a confusion matrix showing how well the model did in predicting the target values.</p>
 <p>You’ll notice that in many cases (including this one), the numbers in the confusion matrix will be the same as the results you see from the confusion_matrix() function above, but the plot makes it easier to interpret the results.</p>
 <p>When using the confusion matrix, you may find that the default color mapping is difficult to read. The “Blues” mapping is a popular choice.</p>
-<div id="cell-34" class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Seaborn heatmap</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="cell-34" class="cell" data-outputid="cca3d341-f357-44eb-dc36-d1ceed279383" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:452}}" data-execution_count="60">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a Seaborn heatmap</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>sns.heatmap(matrix, cmap <span class="op">=</span> <span class="st">"Blues"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_04_files/figure-html/cell-18-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -2269,6 +2759,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Often, using too many features can give poor results. Can you get better performance using a subset of the features instead of all four?</p></li>
 <li><p>Are there other ways you could visualize your model results?</p></li>
 </ol>
+<div id="cell-36" class="cell" data-outputid="a40c7c22-4670-4a5c-e5f8-f09105ca4b9d" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:466}}" data-execution_count="78">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>true_false <span class="op">=</span> pd.DataFrame()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>true_false[<span class="st">'y_predictions'</span>] <span class="op">=</span> y_predictions</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>true_false[<span class="st">'y_test'</span>] <span class="op">=</span> y_test[<span class="st">'species'</span>]</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>true_false[<span class="st">'correct'</span>] <span class="op">=</span> true_false[<span class="st">'y_predictions'</span>] <span class="op">==</span> true_false[<span class="st">'y_test'</span>]</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> true_false, x <span class="op">=</span> <span class="st">'y_test'</span>, hue <span class="op">=</span> <span class="st">'correct'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Exploration_04_files/figure-html/cell-19-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>
